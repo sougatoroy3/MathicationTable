@@ -12,7 +12,22 @@ struct ContentView: View {
     @State private var selectedTable :Int = 1
     @State private var numberOfQuestions :Int = 5
     @State private var difficulty :String = "Easy"
-
+    @State private var result : Int = 0
+    @State private var randomNumber : Int = Int.random(in: 1...20)
+    @State private var userAnswer : Int = 0
+    
+    func multiplication(number :Int, randomNumber : Int) -> Int {
+        return randomNumber * number
+    }
+    
+    func correctOrNot() -> Bool{
+        if result == userAnswer{
+            return true
+        }else{
+            return false
+        }
+    }
+    
     var body: some View {
         Text("Mathication Table")
             .font(.title)
@@ -24,8 +39,8 @@ struct ContentView: View {
             .frame(width: .infinity, height: 50)
         
         Form{
-            Section("Select which multiplication table you want to practice"){
-                Picker("Select : ", selection: $selectedTable){
+            Section("Which multiplication table you want to practice?"){
+                Picker("Select ", selection: $selectedTable){
                     ForEach(1..<21, id: \.self){
                         Text("\($0)")
                     }
@@ -40,7 +55,7 @@ struct ContentView: View {
             }
             .fontWeight(.bold)
             
-            Section("Select difficulty :"){
+            Section("Difficulty ?"){
                 Picker("Choose from ", selection: $difficulty){
                     ForEach(["Easy", "Medium", "Hard"], id: \.self){
                         Text($0)
@@ -51,8 +66,12 @@ struct ContentView: View {
             .fontWeight(.bold)
         }
         VStack{
-            Button("Proceed"){
-                
+            Button("Let's Go"){
+                for i in 0...numberOfQuestions{
+                    print("Round number \(i)")
+                    randomNumber = Int.random(in: 1...20)
+                    result = multiplication(number : selectedTable, randomNumber : randomNumber)
+                }
             }
             .foregroundStyle(.white)
             .frame(width: .infinity, height: 30)
@@ -63,6 +82,19 @@ struct ContentView: View {
             Section("Quiz Mode"){
                 Text("Here we go !")
             }
+            
+            HStack{
+                Text("\(selectedTable) * \(randomNumber) = ")
+                TextField("Answer", value: $userAnswer, format: .number)
+                    .keyboardType(.numberPad)
+            }
+            .padding()
+            
+            Button("Check"){
+                let check = correctOrNot()
+                print("\(check)")
+            }
+                
         }
     }
 }
