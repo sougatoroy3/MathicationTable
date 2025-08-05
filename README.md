@@ -34,7 +34,7 @@ Whether you're a student sharpening your math skills or a parent helping your ch
 
 | Setup Screen | Quiz In Progress | Final Score Alert |
 |:------------:|:----------------:|:-----------------:|
-| ![Setup](Products/setup.png) | ![Quiz](Products/quiz.png) | ![Result](Products/result.png) |
+| ![Setup](/setup.png) | ![Quiz](/quiz.png) | ![Result](/result.png) |
 
 
 ---
