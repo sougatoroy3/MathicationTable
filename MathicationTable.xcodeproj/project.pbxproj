@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A0664AE42E427A0E00389953 /* result.png in Resources */ = {isa = PBXBuildFile; fileRef = A0664AE22E427A0E00389953 /* result.png */; };
+		A0664AE52E427A0E00389953 /* quiz.png in Resources */ = {isa = PBXBuildFile; fileRef = A0664AE12E427A0E00389953 /* quiz.png */; };
+		A0664AE62E427A0E00389953 /* setup.png in Resources */ = {isa = PBXBuildFile; fileRef = A0664AE32E427A0E00389953 /* setup.png */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A0664AB92E40E47300389953 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,9 @@
 		A0664AAB2E40E47100389953 /* MathicationTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathicationTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0664AB82E40E47300389953 /* MathicationTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathicationTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0664AC22E40E47300389953 /* MathicationTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathicationTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0664AE12E427A0E00389953 /* quiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz.png; sourceTree = "<group>"; };
+		A0664AE22E427A0E00389953 /* result.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = result.png; sourceTree = "<group>"; };
+		A0664AE32E427A0E00389953 /* setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setup.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +88,9 @@
 				A0664ABB2E40E47300389953 /* MathicationTableTests */,
 				A0664AC52E40E47300389953 /* MathicationTableUITests */,
 				A0664AAC2E40E47100389953 /* Products */,
+				A0664AE12E427A0E00389953 /* quiz.png */,
+				A0664AE22E427A0E00389953 /* result.png */,
+				A0664AE32E427A0E00389953 /* setup.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0664AE42E427A0E00389953 /* result.png in Resources */,
+				A0664AE52E427A0E00389953 /* quiz.png in Resources */,
+				A0664AE62E427A0E00389953 /* setup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
