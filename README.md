@@ -51,7 +51,7 @@ Whether you're a student sharpening your math skills or a parent helping your ch
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mathication-table.git
+   git clone https://github.com/sougatoroy3/MathicationTable.git
 2. Open the project in Xcode.
 3. Run the app on a simulator or physical iOS device.
 
